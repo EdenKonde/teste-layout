@@ -1,92 +1,134 @@
-
 * {
     font-family: 'Poppins', sans-serif;
-}
-#conteudo {
-    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-#menu {
-    background-color: rgba(128, 123, 123, 0.5);
-    border-radius: 5px;
-
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(50, 122, 128);
 }
-#menu ul> {
+.menu ul {
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
-#menu li {
-    display: inline-flex;
+.menu li {
+    padding: 10px 50px;
 }
-
-li > a {
+.menu a {
     text-decoration: none;
-    color: black;
-    margin: 20px;
-    font-weight: bold;
+    color: #eee;
+    font-size: 1.3em;
+    padding: 10px 15px;
+}
+.menu a:hover {
+    background-color: #91a1a8;
+    color: #000;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/science-1182713_1920.jpg");
+    background-size: 100% 100%;
+    color: #fff;
+    justify-content: center;  
+    align-items: center;
+    height: 500px;
+}
+.conteudo-pai {
     width: 100%;
-}
-
-#menu a:hover {
-    color: white;
-}
-
-h1, h3 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-#centro {
-    display: flex;
-    
-}
-#centro > img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-#dupla-end {
-    display: flex;
-    justify-content: flex-end;
-}
-#dupla-end > img {
-    margin: 20px;
-    width: 40%;
-    
-}
-
-#dupla-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-#dupla-between > img {
-    width: 50%;
-}
-
-p {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#data {
-    display: flex;
-    flex-wrap: nowrap; 
-}
-
-#data {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}
-
-#footer {
     display: flex;
     justify-content: center;
-    background-color: rgba(128, 123, 123, 0.5);
-    border-radius: 5px;
-    margin-top: 100px;
+    flex-direction: column;
+    padding: 20px;
+ 
+}
+.conteudo-pai div {
+    margin: 10px;
+    color: #fff;
+    height: 450px;
+    background-size: 100% 100%;
+}
+
+.conteudo-flex-1 {
+    width: 100%;
+    display: flex;
+}
+
+.conteudo-flex-1 div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
+    width: 80%;
+    padding: 10px 20px;
+    
+}
+.conteudo-flex-1 div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/hack-capital-uv5_bsypFUM-unsplash.jpg");
+    width: 40%;
+    padding: 10px 20px;
+    align-items: center;
+
+}
+
+.conteudo-flex-2 div:nth-child(1) {
+    display: flex;
+    background-image: url("../img/farzad-nazifi-p-xSl33Wxyc-unsplash.jpg");
+    padding: 10px 20px;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.conteudo-flex-3 {
+    display: flex;
+}
+
+.conteudo-flex-3 div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bady-abbas-jOmBUCtflWA-unsplash.jpg);
+    width: 40%;
+    padding: 10px 20px;
+}
+
+.conteudo-flex-3 div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../img/desk-1220052_1920.jpg);
+    width: 80%;
+    padding: 10px 20px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(50, 122, 128);
+    padding: 15px;
+}
+
+@media (max-width: 812px) {
+    .titulos {
+        height: 300px;
+        width: 100%;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
 }
